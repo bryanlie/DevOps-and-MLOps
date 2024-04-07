@@ -14,8 +14,9 @@ provider aws {
 
 # Create an EC2 instance
 resource "aws_instance" "main-server" {
-    ami = "ami-06e0ce9d3339cb039" 
-    instance_type = "t1.micro"
+    # AMI (Amazon Machine Instance) Ubuntu	Jammy Jellyfish	22.04 LTS
+    ami = "ami-053053586808c3e70"
+    instance_type = "m5.large"
     
     tags = {
         Name = "MainInstance"
